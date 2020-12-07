@@ -54,5 +54,9 @@ public:
     // 转置
     friend Matrix operator ~ (const Matrix &B);
 
+    void kernel(Matrix& c, float *a , float*b, int row, int col);
+
+    Matrix multi_block(const Matrix &B);
+
 };
 #endif
